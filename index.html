@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>PH CV of Hong Wang</title>
+  <link rel="stylesheet" type="text/css" href="http://115.29.206.70/assets/resume/cv/styles/grid.css" />
+  <style type="text/css">
+    body {
+      margin    : 0;
+      padding   : 0;
+      min-width : 1200px;
+    }
+
+    a {
+      text-decoration : none; 
+    }
+
+    a:hover {
+      text-decoration : underline; 
+    }
+
+    /* menu style */
+    #menu {
+      position   : fixed;
+      width      : 180px;
+      height     : 100%;
+      font       : bold 13px arial, sans-serif;
+      color      : #FFF;
+      text-align : left;
+      background : #202830;
+      z-index    : 999;
+      /*outline : 1px dotted red;*/
+    }
+
+    /* menulogo style */
+    #menulogo {
+      position  : relative;
+      width     : 100%;
+      height    : 98px;
+      font-size : 28px;
+      /*outline : 1px solid white;*/
+    }
+
+    #menulogo img {
+      position : absolute;
+      left     : 47%;
+      top      : 28px;
+      width    : 36px;
+    }
+
+    #menulogo span.menulogo_pre {
+      position    : absolute;
+      top         : 50%;
+      left        : 25%;
+      height      : 30px;
+      line-height : 30px;
+      margin-top  : -15px;
+    }
+
+    #menulogo span.menulogo_post {
+      position : absolute;
+      left     : 68%;
+      top      : 40px;
+      color    : #ED5565;
+    }
+    /* end of menulogo style */
+
+    /* menulist style */
+    #menulist {
+      list-style-type : none;
+      padding         : 0;
+      margin          : 0;
+      border-top      : 1px solid #27303A;
+    }
+
+    #menulist li {
+      position      : relative;
+      height        : 34px;
+      padding       : 5px 0 5px 60px;
+      line-height   : 34px;
+      border-bottom : 1px solid #27303A;
+      border-left   : 5px solid #202830;
+    }
+
+    #menulist li img  {
+      position : absolute;
+      left     : 26px;
+      top      : 10px;
+      width    : 22px;
+    }
+
+    #menulist li:hover {
+      background-color : #151C22;
+    }
+
+    #menulist li.selected {
+      background-color : #151C22;
+      border-left      : 5px solid #ED5565;
+    }
+    /* end of menulist style */
+    /* end of menu style */
+
+
+    /* main content style */
+    #main {
+      margin-left : 180px;
+    }
+
+    /* profile style */
+    #profile_wrapper {
+      width      : 100%;
+      padding    : 100px 0 0 0;
+      background : #101418;
+    }
+
+    #profile_region {
+      position : relative;
+      padding  : 50px 0 100px 0;
+      /*outline : 1px solid #27303a;*/
+    }
+
+    #profile_title {
+      padding       : 50px 0 10px;
+      font          : bold 28px/28px arial, sans-serif;
+      text-align    : center;
+      color         : #FFF;
+      border-bottom : 1px solid #FFF;
+      /*outline : 1px solid #fff;*/
+    }
+
+    #profile_title img {
+      position : relative;
+      top      : 5px;
+      width    : 36px;
+    }
+
+    #profile_title span.profile_title_pre  {
+      position : relative;
+      left     : 8px;
+    }
+
+    #profile_title span.profile_title_post  {
+      position : relative;
+      right    : 6px;
+      top      : 6px;
+      color    : #ED5565;
+    }
+
+    #profile_content {
+      padding     : 20px 0 120px;
+      font-family : Verdana, Palatino Linotype, Times New Roman, sans-serif;
+      text-align  : justify;
+      font-size   : 16px;
+      line-height : 24px;
+      text-indent : 2em;
+      color       : #FFF;
+    }
+
+    #profile_content a {
+      color      : #FFF;
+      font-style : italic;
+    }
+
+    #profile_share {
+      background : #1C2024;
+      /*outline : 1px solid #fff;*/
+    }
+    /* end of profile style */
+
+    /* resume style */
+    #resume_wrapper {
+      position   : relative;
+      padding    : 20px 0 60px 0;
+      width      : 100%;
+      background : url(http://115.29.206.70/assets/resume/cv/images/circle_bg.png) rgba(255, 255, 255, 0.35);
+    }
+
+    #resume_region {
+      position    : relative;
+      font-family : Verdana, Palatino Linotype, Times New Roman, sans-serif;
+      /*font-family : Times New Roman, Palatino Linotype, Verdana, sans-serif;*/
+    }
+
+    #resume_title {
+      margin-top : 40px;
+      padding    : 5px 0 10px;
+      color      : #ED5565;
+      font       : bold 28px/28px arial, sans-serif;
+      text-align : center;
+      /* outline : 1px solid #ED5565; */
+    }
+
+    #resume_title div {
+      position : absolute;
+      bottom   : 0;
+      border   : 1px solid #ED5565;
+    }
+
+    #resume_title div.ul {
+      width        : 33%;
+      left         : 0;
+      border-color : #dbdbdb;
+    }
+
+    #resume_title div.um {
+      width        : 34%;
+      left         : 33%;
+      border-color : #ed5565;
+    }
+
+    #resume_title div.ur {
+      width        : 33%;
+      left         : 67%;
+      border-color : #dbdbdb;
+    }
+
+    #resume_content {
+      padding     : 10px 0;
+      color       : #666;
+      text-align  : justify;
+      font-size   : 16px;
+      line-height : 24px;
+      text-indent : 2em;
+    }
+
+    #resume_content_detail {
+      padding    : 0 0 20px;
+      color      : #666;
+      text-align : center;
+      /* outline : 1px solid #FFF; */
+    }
+
+    #resume_content_detail .category {
+      width         : 100px;
+      height        : 30px;
+      margin        : 15px auto 20px;
+      padding       : 2px 10px;
+      font-size     : 15px;
+      line-height   : 30px;
+      color         : #FFF;
+      background    : #ED5565;
+      border-radius : 3px;
+    }
+
+    #resume_content_detail .category.education {
+      margin-top : 50px;
+    }
+
+    #resume_content_detail .description.education {
+      margin-bottom : 20px;
+    }
+
+    .experience .company, .experience .school {
+      color : #5490FF;
+    }
+
+    img.gucas {
+      position : absolute;
+      top      : -115px;
+      right    : 45px;
+      width    : 230px;
+      opacity  : 0.065;
+    }
+
+    img.njupt {
+      position : absolute;
+      top      : -110px;
+      right    : 45px;
+      width    : 230px;
+      opacity  : 0.065;
+    }
+
+    #resume_content_detail .description {
+      position      : relative;
+      margin-bottom : 5px;
+      padding       : 10px 0;      
+      font-size     : 15px;
+      line-height   : 24px;
+      text-align    : justify;
+      /* outline : 1px solid #000; */
+    }
+
+    .description li {
+      font-size   : 16px;
+      line-height : 24px;
+      text-align  : justify;
+    }
+
+    #resume_content_detail .period {
+      position    : relative;
+      margin      : 10px auto;
+      padding     : 15px 20px;    
+      width       : 210px;
+      color       : #ED5565;
+      font-weight : bold;  
+      font-size   : 15px;
+      /* outline : 1px solid #000; */
+    }
+
+    #resume_content_detail .experience:after {
+      display       : block;
+      margin        : 0 auto 25px;
+      padding       : 0;
+      content       : ".";
+      width         : 70px;
+      height        : 0;
+      overflow      : hidden;
+      line-height   : 0;
+      color         : #ED5565;
+      border-bottom : 2px solid #ED5565;  
+      /* outline : 1px solid #000;  */
+    }
+
+    .period img {
+      position    : absolute;
+      bottom      : -10px;
+      left        : 50%;
+      margin-left : -120px;
+      width       : 240px;
+    }
+
+    #resume_content_detail .position, #resume_content_detail .degree {
+      position    : relative;
+      margin      : 15px auto;
+      padding     : 10px 20px; 
+      width       : 320px;
+      font-weight : bold;     
+      font-size   : 16px;
+      /* outline : 1px solid #000; */
+    }
+
+    #resume_content_detail .company, #resume_content_detail .school {
+      position   : relative;
+      margin     : 15px auto;
+      padding    : 0px 20px; 
+      width      : 280px;
+      font-style : italic;     
+      font-size  : 15px;
+      /* outline : 1px solid #000; */
+    }
+    /* end of resume style */
+
+    /* work style */
+    #work_wrapper {
+      position   : relative;
+      width      : 100%;
+      padding    : 20px 0 100px 0;
+      background : url(http://115.29.206.70/assets/resume/cv/images/circle_bg.png) rgb(67, 74, 84);
+    }
+
+    #work_region {
+      position    : relative;
+      font-family : Verdana, Palatino Linotype, Times New Roman, sans-serif;
+    }
+
+    #work_title {
+      margin-top : 40px;
+      padding    : 5px 0 10px;
+      font       : bold 28px/28px arial, sans-serif;
+      color      : #EDEDED;
+      text-align : center;
+      /* outline : 1px solid #ED5565; */
+    }
+
+    #work_title div {
+      position : absolute;
+      bottom   : 0;
+      border   : 1px solid #868686;
+    }
+
+    #work_title .ul {
+      width        : 33%;
+      left         : 0;
+      border-color : #868686;
+    }
+
+    #work_title .um {
+      width        : 34%;
+      left         : 33%;
+      border-color : #EDEDED;
+    }
+
+    #work_title .ur {
+      width        : 33%;
+      left         : 67%;
+      border-color : #868686;
+    }
+
+
+    #work_content {
+      padding     : 20px 0;
+      text-indent : 2em;
+      text-align  : justify;
+      font-size   : 16px;
+      line-height : 24px;
+      color       : #EDEDED;
+      /* outline : 1px solid #FFF; */
+    }
+
+    #work_content a {
+      color      : #EDEDED;
+      font-style : italic;
+    }
+
+    .work_content_detail {
+      margin-bottom : 10px;
+      height        : 230px;
+      background    : #A1A5AA;
+      text-align    : center;
+    }
+
+    .work_content_detail img {
+      width  : 270px;
+      /*height : 230px;*/
+    }
+
+    .work_content_detail img.namecard {
+      width  : 180px;
+      height : 230px;
+    }
+
+    .work_content_detail img.vanlib {
+      position   : relative;
+      top        : 50%;
+      margin-top : -90px;
+      height     : 180px;
+    }
+    /* end of work style */
+
+    /* contact style */
+    #contact_wrapper {
+      position   : relative;
+      padding    : 20px 0 100px 0;
+      background : url(http://115.29.206.70/assets/resume/cv/images/circle_bg.png) rgba(255, 255, 255, 0.35);
+      width      : 100%;
+    }
+
+    #contact_region {
+      position    : relative;
+      font-family : Verdana, Palatino Linotype, Times New Roman, sans-serif;
+    }
+
+    #contact_title {
+      color      : #ED5565;
+      font       : bold 28px/28px arial, sans-serif;
+      margin-top : 40px;
+      padding    : 5px 0 10px;
+      text-align : center;
+      /* outline : 1px solid #ED5565;*/
+    }
+
+    #contact_title div {
+      position : absolute;
+      bottom   : 0;
+      border   : 1px solid #ED5565;
+    }
+
+    #contact_title .ul {
+      width        : 33%;
+      left         : 0;
+      border-color : #DBDBDB;
+    }
+
+    #contact_title .um {
+      width        : 34%;
+      left         : 33%;
+      border-color : #ED5565;
+    }
+
+    #contact_title .ur {
+      width        : 33%;
+      left         : 67%;
+      border-color : #DBDBDB;
+    }
+
+    #contact_content {
+      padding     : 20px 0;
+      text-align  : justify;
+      font-size   : 16px;
+      line-height : 24px;
+      text-indent : 2em;
+      color       : #666;
+      /* outline : 1px solid #f00; */
+    }
+    /* end of contact style */
+
+    /*grid pink fff2f2*/
+    /*share icon 7c8188*/
+    /*bttom gray 434a54*/
+    
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <div id="menulogo">
+      <span class="menulogo_pre">PH</span>
+      <img src="http://115.29.206.70/assets/resume/cv/images/camera.svg" />
+      <span class="menulogo_post">&#8226;</span>
+    </div>
+    <ul id="menulist">
+      <li id="profile"><img src="http://115.29.206.70/assets/resume/cv/images/home.svg" />PROFILE</li>
+      <li id="resume"><img src="http://115.29.206.70/assets/resume/cv/images/list.svg" />RESUME</li>
+      <li id="work"><img src="http://115.29.206.70/assets/resume/cv/images/lamp.svg" />WORK</li>
+      <li id="contact"><img src="http://115.29.206.70/assets/resume/cv/images/contacts.svg" />CONTACT</li>
+    </ul>
+  </div>
+  <div id="main">
+    <div id="profile_wrapper">
+      <div id="profile_region" class="body-950">
+        <div class="grid start-01"></div>
+        <div class="grid start-02"></div>
+        <div class="grid start-03"></div>
+        <div class="grid start-04"></div>
+        <div class="grid start-05"></div>
+        <div class="grid start-06"></div>
+        <div class="grid start-07"></div>
+        <div class="grid start-08"></div>
+        <div class="grid start-09"></div>
+        <div class="grid start-10"></div>
+        <div class="grid start-11"></div>
+        <div class="grid start-12"></div>
+        <div class="grid start-13"></div>
+        <div class="grid start-14"></div>
+        <div class="grid start-15"></div>
+        <div class="grid start-16"></div>
+        <div class="grid start-17"></div>
+        <div class="grid start-18"></div>
+        <div class="grid start-19"></div>
+        <div class="grid start-20"></div>
+        <div class="grid start-21"></div>
+        <div class="grid start-22"></div>
+        <div class="grid start-23"></div>
+        <div class="grid start-24"></div>
+
+        <div class="container">
+          <div id="profile_title" class="column-04 start-11">
+            <span class="profile_title_pre">PH</span>
+            <img src="http://115.29.206.70/assets/resume/cv/images/camera.svg" />
+            <span class="profile_title_post">&#8226;</span>
+          </div>
+        </div>
+        <div class="container">
+          <div id="profile_content" class="column-20 start-03">
+            <p>Hello, my name is <a href="http://cn.linkedin.com/in/llwanghong" target="_blank">Hong Wang</a>. I am now living in Zhangjiang, Pudong New Dist, Shanghai, China.</p>
+            <p>I am now a senior CPU engineer at CPU Group of <a href="http://www.marvell.com/" target="_blank">Marvell Technology Group Ltd</a>, and focusing on High Performance Mobile Processor Design and Verification work.</p>
+          </div>
+        </div>  
+
+      </div>
+      <div id="profile_share"></div>
+    </div>
+    <div id="resume_wrapper">
+      <div id="resume_region" class="body-950">
+        <div class="grid start-01"></div>
+        <div class="grid start-02"></div>
+        <div class="grid start-03"></div>
+        <div class="grid start-04"></div>
+        <div class="grid start-05"></div>
+        <div class="grid start-06"></div>
+        <div class="grid start-07"></div>
+        <div class="grid start-08"></div>
+        <div class="grid start-09"></div>
+        <div class="grid start-10"></div>
+        <div class="grid start-11"></div>
+        <div class="grid start-12"></div>
+        <div class="grid start-13"></div>
+        <div class="grid start-14"></div>
+        <div class="grid start-15"></div>
+        <div class="grid start-16"></div>
+        <div class="grid start-17"></div>
+        <div class="grid start-18"></div>
+        <div class="grid start-19"></div>
+        <div class="grid start-20"></div>
+        <div class="grid start-21"></div>
+        <div class="grid start-22"></div>
+        <div class="grid start-23"></div>
+        <div class="grid start-24"></div>
+
+        <div class="container">
+          <div id="resume_title" class="column-04 start-11">
+            RESUME
+            <div class="ul"></div>
+            <div class="um"></div>
+            <div class="ur"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="resume_content" class="column-20 start-03">
+            <p>My current working area is CPU design and verification, and I once involved in physical back-end design (RTL synthesis, formal equivalence check, static timing analysis, physical implementation etc), low power design and verification, FPGA prototpying and validation work for our last projects. I am currently working on verification work of one new ARM v8 processor project.</p>
+            <p>I am also interesting in Web Design, and spend a lot of my spare time in this area. The elements in the area are so attractive, the dynamic nature of Javascript, the beautiful CSS layout, the amazing power of Node.js ...</p>
+          </div>
+        </div>
+
+        <div id="resume_content_detail">
+          <div class="category_wrapper">
+            <div class="category">Employment</div>
+            <div class="experience">
+              <div class="period">
+                July, 2014 - Present
+                <img src="http://115.29.206.70/assets/resume/cv/images/border.svg" />
+              </div>
+              <div class="position">CPU Senior Engineer</div>
+              <div class="company">Marvell Semiconductor</div>
+              <div class="container">
+                <div class="description start-04 column-18">
+                  <ul>
+                    <li>Low power design and verification work for one ARM v7 processor project.</li>
+                    <li>Module-level verification work for one ARM v8 processor project.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="period">
+                June, 2011 - July, 2014
+                <img src="http://115.29.206.70/assets/resume/cv/images/border.svg" />
+              </div>
+              <div class="position">CPU Back-End Engineer</div>
+              <div class="company">Marvell Semiconductor</div>
+              <div class="container">
+                <div class="description start-04 column-18">
+                  <ul>
+                    <li>RTL synthesis, placement, formal equivalence check and sign-off timing check for several ARM processor projects.</li>
+                    <li>Low power verification environment setup, Low power design and verification work for one ARM v7 processor.</li>
+                    <li>FPGA validation environment setup, FPGA prototyping and validation work for one ARM v7 processor.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="period">
+                June, 2009 - June, 2011
+                <img src="http://115.29.206.70/assets/resume/cv/images/border.svg" />
+              </div>
+              <div class="position">Physical Back-End Engineer</div>
+              <div class="company">Institute of Computing Technology</div>
+              <div class="container">
+                <div class="description start-04 column-18">
+                  <ul>
+                    <li>Preliminary research work for Godson 3C CPU (16 cores, TSMC 28nm), 2H (single core, ST 65nm) and semi-custom the Fused Multiply-Add Floating-Point (FMAF) module.</li>
+                    <li>Chip-Level physical implementation of Godson 1F South Bridge chip (SMIC 130nm, 1.6M Instance, 350MHz).</li>
+                    <li>Module-level physical implementation of the Memory in Godson 3B CPU (8 cores, ST 65nm, 200K Instances, 1.1GHz).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category_wrapper">
+            <div class="category education">Education</div>
+            <div class="experience">
+              <div class="period">
+                Sept, 2008 - June, 2011
+                <img src="http://115.29.206.70/assets/resume/cv/images/border.svg" />
+              </div>
+              <div class="degree">Master of Engineering (M.Eng.), Computer System and Architecture</div>
+              <div class="school"><img class="gucas" src="http://115.29.206.70/assets/resume/cv/images/gucas.jpg" />University of Chinese Academy of Sciences</div>
+              <div class="container">
+                <div class="description education start-04 column-18"><strong>Main Courses: </strong>ASIC Design, High-Performance Computer System, VLSI Testing and Design for Testability, Computability and Complexity of Computing, Verification of IC Design.</div>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="period">
+                Sept, 2004 - June, 2008
+                <img src="http://115.29.206.70/assets/resume/cv/images/border.svg" />
+              </div>
+              <div class="degree">Bachelor of Science (B.Sc.), Applied Physics</div>
+              <div class="school"><img class="njupt" src="http://115.29.206.70/assets/resume/cv/images/njupt.jpg" />Nanjing University of Posts and Telecommunications</div>
+              <div class="container">
+                <div class="description education start-04 column-18"><strong>Main Courses: </strong>Digital/Analog Circuits, RF Circuits, Microwave Antenna and Technology, Communication Theory, Signals and Systems, Mathematical Methods of Physics, Electrodynamics, Quantum Mechanics.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="work_wrapper">
+      <div id="work_region" class="body-950">
+        <div class="grid start-01"></div>
+        <div class="grid start-02"></div>
+        <div class="grid start-03"></div>
+        <div class="grid start-04"></div>
+        <div class="grid start-05"></div>
+        <div class="grid start-06"></div>
+        <div class="grid start-07"></div>
+        <div class="grid start-08"></div>
+        <div class="grid start-09"></div>
+        <div class="grid start-10"></div>
+        <div class="grid start-11"></div>
+        <div class="grid start-12"></div>
+        <div class="grid start-13"></div>
+        <div class="grid start-14"></div>
+        <div class="grid start-15"></div>
+        <div class="grid start-16"></div>
+        <div class="grid start-17"></div>
+        <div class="grid start-18"></div>
+        <div class="grid start-19"></div>
+        <div class="grid start-20"></div>
+        <div class="grid start-21"></div>
+        <div class="grid start-22"></div>
+        <div class="grid start-23"></div>
+        <div class="grid start-24"></div>
+
+        <div class="container">
+          <div id="work_title" class="column-04 start-11">
+            WORK
+            <div class="ul"></div>
+            <div class="um"></div>
+            <div class="ur"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="work_content" class="column-20 start-03">
+            <p>In my spare time, I spend a lot effort on Web Design area. After reading series of classical books and materials, I am now proficient with Javascript, CSS etc.</p>
+            <p>I once try to write one own Javascript library vAN, which can finish common frontend works, such as DOM/CSS operations, Events handle and Animation. This Resume page and following <a href="http://115.29.206.70/assets/resume/slider.html" target="_blank">Slider</a> are both using this library.</p>
+            <p>In addition, I once finished one single page of my company <a href="http://115.29.206.70/assets/resume/card.html" target="_blank">Name Card</a>.</p>
+            <p>Few months ago, I found Node.js in one Web SPA book. It is a really powerfully framework, which makes it possible to do full stack web development only by Javascript. So I spend several days on related topics. I take courses of <a href="http://115.29.206.70/assets/resume/mongo/Dashboard.html" target="_blank">MongoDB</a> on <a href="https://university.mongodb.com/" target="_blank">MongoDB Website</a>, learn Express, Socket.io, Jade etc, and I finally finish one realtime online chatting WebAPP <a href="https://github.com/llwanghong/vanTalk" target="_blank">vanTalk</a>. It already implements some basic functions, such as user authentication, password reset, friend invitation and realtime friends' online status notification etc.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="work_content_detail column-07 start-03">
+            <a href="http://115.29.206.70/assets/resume/slider.html" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/vanlib.png" class="vanlib" alt="Slider based on vAN library"/></a>
+          </div>
+          <div class="work_content_detail column-06 start-10">
+            <a href="http://115.29.206.70/assets/resume/card.html" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/namecard.png" class="namecard" alt="Name Card"/></a>
+          </div>
+          <div class="work_content_detail vantalk column-07 start-16">
+            <a href="https://github.com/llwanghong/vanTalk" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/vantalk.png" alt="Realtime Chatting WebAPP - vanTalk"/></a>
+          </div> 
+        </div>  
+      </div>
+    </div>
+
+    <div id="contact_wrapper">
+      <div id="contact_region" class="body-950">
+        <div class="grid start-01"></div>
+        <div class="grid start-02"></div>
+        <div class="grid start-03"></div>
+        <div class="grid start-04"></div>
+        <div class="grid start-05"></div>
+        <div class="grid start-06"></div>
+        <div class="grid start-07"></div>
+        <div class="grid start-08"></div>
+        <div class="grid start-09"></div>
+        <div class="grid start-10"></div>
+        <div class="grid start-11"></div>
+        <div class="grid start-12"></div>
+        <div class="grid start-13"></div>
+        <div class="grid start-14"></div>
+        <div class="grid start-15"></div>
+        <div class="grid start-16"></div>
+        <div class="grid start-17"></div>
+        <div class="grid start-18"></div>
+        <div class="grid start-19"></div>
+        <div class="grid start-20"></div>
+        <div class="grid start-21"></div>
+        <div class="grid start-22"></div>
+        <div class="grid start-23"></div>
+        <div class="grid start-24"></div>
+
+        <div class="container">  
+          <div id="contact_title" class="column-04 start-11">
+            CONTACT
+            <div class="ul"></div>
+            <div class="um"></div>
+            <div class="ur"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="contact_content" class="column-20 start-03">
+            <p>I am now seeking one Web Frontend Design position and really hope one great Web team can give me an opportunity and accept me, accept one young guy with great enthusiasm in Web Design area, I want to grow faster with all team memebers together. I won't let you down. Waiting your message.</p>
+            <p>Email: llwanghong@gmail.com</p>
+            <p>Wechat: llwanghong</p>
+            <p>Mobile: 86-13816636901</p>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="scripts/van.js"></script>
+  <script type="text/javascript">
+    var profile_wrapper_top, resume_wrapper_top, work_wrapper_top, contact_wrapper_top,
+      scrollHandle = null,
+      animateHandle = null,
+      scrollElem = null;
+
+    // handler for mouse scroll event
+    scrollHandle = function () {
+      var
+       top    = $(window).scrollTop(),
+       height = $(window).viewSize().h,
+       delta = Math.ceil(height*0.65);
+       if (resume_wrapper_top-top > delta) {
+         // profile is selected
+         $.removeClass($('.selected'), 'selected');
+         $.addClass($('#profile'), 'selected');
+       } else if (resume_wrapper_top-top < delta && work_wrapper_top-top > delta) {
+         $.removeClass($('.selected'), 'selected');
+         $.addClass($('#resume'), 'selected');
+       } else if (work_wrapper_top-top < delta && contact_wrapper_top-top > delta) {
+         $.removeClass($('.selected'), 'selected');
+         $.addClass($('#work'), 'selected');
+       } else if (contact_wrapper_top-top < delta) {
+         $.removeClass($('.selected'), 'selected');
+         $.addClass($('#contact'), 'selected');
+       } else {
+       }
+    };
+
+    // handler selected status animation
+    // when click, and the page scroll up/down,
+    // scroll handler will firstly be removed
+    // and rebinded when animation end. 
+    animateHandle = function (id, delta, steps) {
+      vAN.animate(
+        scrollElem,
+        {scrollTop: delta},
+        {
+          steps: steps,
+          easing: "linear",          
+          pre: function () {
+            $.removeEvent(window, 'scroll', scrollHandle);
+          },
+          post: function () {
+            $.addEvent(window, 'scroll', scrollHandle);
+            $.removeClass($('.selected'), 'selected');
+            $.addClass($(id), 'selected');
+          }
+        }
+      );
+    };
+
+    // determine scorllTop of which element is working
+    // in the current browser
+    document.body.scrollTop = 1;
+    if (document.body.scrollTop === 1) {
+      scrollElem = document.body;
+    } else {
+      scrollElem = document.documentElement;
+    }
+
+    profile_wrapper_top = $('#profile_wrapper').offset().top;
+    resume_wrapper_top  = $('#resume_wrapper' ).offset().top;
+    work_wrapper_top    = $('#work_wrapper'   ).offset().top;
+    contact_wrapper_top = $('#contact_wrapper').offset().top;
+
+    // bind click event for each list in the side menu
+    $.addEvent($("#profile")[0], 'click', function () {
+      var
+        top   = $(window).scrollTop(),
+        delta = profile_wrapper_top-top,
+        steps = Math.abs(Math.ceil(delta/60));
+      animateHandle('#profile', delta, steps);
+    });
+
+    $.addEvent($("#resume")[0], 'click', function () {
+      var
+       top   = $(window).scrollTop(),
+       delta = resume_wrapper_top-top,
+       steps = Math.abs(Math.ceil(delta/60));
+      animateHandle('#resume', delta, steps);
+    });
+
+    $.addEvent($("#work")[0], 'click', function () {
+      var
+       top   = $(window).scrollTop(),
+       delta = work_wrapper_top-top,
+       steps = Math.abs(Math.ceil(delta/60));
+      animateHandle('#work', delta, steps);
+    });
+
+    $.addEvent($("#contact")[0], 'click', function () {
+      var
+       top   = $(window).scrollTop(),
+       delta = contact_wrapper_top-top,
+       steps = Math.abs(Math.ceil(delta/60));
+      animateHandle('#contact', delta, steps);
+    });
+
+    // bind the window scroll event at the begining 
+    $.addEvent(window, 'scroll', scrollHandle);
+  </script>
+</body>
+<html>
