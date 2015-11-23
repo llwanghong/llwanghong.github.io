@@ -1001,7 +1001,7 @@
   <script type="text/javascript" src="http://115.29.206.70/assets/resume/cv/scripts/van.js"></script>
   <script type="text/javascript">
     var profile_wrapper_top, old_profile_wrapper_top, resume_wrapper_top, work_wrapper_top, contact_wrapper_top,
-      menu, main,
+      menu, main, updateTop,
       menu_active   = false,
       scrollHandle  = null,
       animateHandle = null,
@@ -1081,28 +1081,36 @@
       contact_wrapper_top -= 35;
     }
 
-    // bind orientation change and update top value for each menulist
-    $.addEvent(window, 'orientationchange', function () {
-      setTimeout(function () {
-        var delta;
-        profile_wrapper_top = $('#profile_wrapper').offset().top;
-        resume_wrapper_top  = $('#resume_wrapper' ).offset().top;
-        work_wrapper_top    = $('#work_wrapper'   ).offset().top;
-        contact_wrapper_top = $('#contact_wrapper').offset().top;
+    // handler for updating top value for each menulist
+    function updateTop () {
+      var delta;
+      profile_wrapper_top = $('#profile_wrapper').offset().top;
+      resume_wrapper_top  = $('#resume_wrapper' ).offset().top;
+      work_wrapper_top    = $('#work_wrapper'   ).offset().top;
+      contact_wrapper_top = $('#contact_wrapper').offset().top;
 
-        if ($.curCSS(menu, 'display') === 'block') {
-          delta = old_profile_wrapper_top - profile_wrapper_top - 35;
-        } else {
-          delta = old_profile_wrapper_top - profile_wrapper_top;
-        }
-        if (delta > 0) {
-          profile_wrapper_top += delta;
-          resume_wrapper_top  += delta;
-          work_wrapper_top    += delta;
-          contact_wrapper_top += delta;
-        }
-      }, 1000);
+      if ($.curCSS(menu, 'display') === 'block') {
+        delta = 20-profile_wrapper_top ;
+      } else {
+        delta = -profile_wrapper_top;
+      }
+      if (delta > 0) {
+        profile_wrapper_top += delta;
+        resume_wrapper_top  += delta;
+        work_wrapper_top    += delta;
+        contact_wrapper_top += delta;
+      }
+    }
+
+    // bind orientation/resize change and update top value for each menulist
+    $.addEvent(window, 'orientationchange', function () {
+      setTimeout(updateTop, 1000);
     });
+
+    $.addEvent(window, 'resize', function () {
+      setTimeout(updateTop, 1000);
+    });
+
 
     // bind click event for each list in the side menu
     $.addEvent($("#profile")[0], 'click', function () {
