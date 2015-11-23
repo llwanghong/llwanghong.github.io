@@ -1,14 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>PH CV of Hong Wang</title>
-  <link rel="stylesheet" type="text/css" href="http://115.29.206.70/assets/resume/cv/styles/grid.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" media="screen and (min-width: 1200px)" href="http://115.29.206.70/assets/resume/cv/styles/grid.css" />
+  <link rel="stylesheet" media="screen and (min-width: 1000px) and (max-width: 1199px)" href="http://115.29.206.70/assets/resume/cv/styles/grid-830.css" />
+  <link rel="stylesheet" media="screen and (min-width:  700px) and (max-width:  999px)" href="http://115.29.206.70/assets/resume/cv/styles/grid-710.css" />
+  <link rel="stylesheet" media="screen and (min-width:  600px) and (max-width:  699px)" href="http://115.29.206.70/assets/resume/cv/styles/grid-590.css" />
+  <link rel="stylesheet" media="screen and (min-width:  400px) and (max-width:  599px)" href="http://115.29.206.70/assets/resume/cv/styles/grid-390.css" />
+  <link rel="stylesheet" media="screen and (min-width:  300px) and (max-width:  399px)" href="http://115.29.206.70/assets/resume/cv/styles/grid-350.css" />
+
   <style type="text/css">
     body {
       margin    : 0;
       padding   : 0;
-      min-width : 1200px;
     }
 
     a {
@@ -17,10 +23,6 @@
 
     a:hover {
       text-decoration : underline; 
-    }
-
-    img {
-      border : none\9\0;
     }
 
     /* menu style */
@@ -68,6 +70,26 @@
       color    : #ED5565;
     }
     /* end of menulogo style */
+
+    /* menubtn style */
+    #menubtn {
+      position  : absolute;
+      width     : 100px;
+      height    : 58px;
+      font-size : 26px;
+      top : 0;
+      right: 0;
+      /*outline : 1px solid white;*/
+    }
+
+    #menubtn img {
+      position : absolute;
+      display : none;
+      right     : 15%;
+      top      : 17px;
+      width    : 24px;
+    }
+    /* end of menubtn style */
 
     /* menulist style */
     #menulist {
@@ -176,7 +198,7 @@
       position   : relative;
       padding    : 20px 0 60px 0;
       width      : 100%;
-      background : url(http://115.29.206.70/assets/resume/cv/images/circle_bg.png) rgba(255, 255, 255, 0.35);
+      background : url(images/circle_bg.png) rgba(255, 255, 255, 0.35);
     }
 
     #resume_region {
@@ -349,7 +371,7 @@
       position   : relative;
       width      : 100%;
       padding    : 20px 0 100px 0;
-      background : url(http://115.29.206.70/assets/resume/cv/images/circle_bg.png) rgb(67, 74, 84);
+      background : url(images/circle_bg.png) rgb(67, 74, 84);
     }
 
     #work_region {
@@ -390,7 +412,6 @@
       border-color : #868686;
     }
 
-
     #work_content {
       padding     : 20px 0;
       text-indent : 2em;
@@ -415,7 +436,7 @@
 
     .work_content_detail img {
       width  : 270px;
-      height : 230px;
+      /*height : 230px;*/
     }
 
     .work_content_detail img.namecard {
@@ -429,13 +450,17 @@
       margin-top : -90px;
       height     : 180px;
     }
+
+    .small-container {
+      display : none;
+    }
     /* end of work style */
 
     /* contact style */
     #contact_wrapper {
       position   : relative;
       padding    : 20px 0 100px 0;
-      background : url(http://115.29.206.70/assets/resume/cv/images/circle_bg.png) rgba(255, 255, 255, 0.35);
+      background : url(images/circle_bg.png) rgba(255, 255, 255, 0.35);
       width      : 100%;
     }
 
@@ -491,7 +516,172 @@
     /*grid pink fff2f2*/
     /*share icon 7c8188*/
     /*bttom gray 434a54*/
+
+    /* media query */
+    @media screen and (max-width: 1000px){
+      #menu {
+        width: 100%;
+        top:0;
+        height: auto;
+      }
+
+      #menulogo {
+        width: 100px;
+        height: 58px;
+        font-size: 26px;
+      }
+
+      #menulogo span.menulogo_pre {
+        height: auto;
+        left: 15%;
+        line-height: 26px;
+        margin-top: -12px;
+      }
     
+      #menulogo img {
+        top: 10px;
+        left: 51%;
+        width: 35px;
+      }
+    
+      #menulogo span.menulogo_post {
+        top: 23px;
+        left: 86%;
+        font-size: 24px;
+      }
+    
+      #menubtn img {
+        display: block;
+      }
+
+      #menulist {
+        display: none;
+      }
+    
+      #main {
+        margin-left: auto;
+        margin-top: 58px;
+      }
+      
+      #profile_wrapper {
+        padding: 30px 0 0 0;
+      }
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1199px) {
+      .work_content_detail img.vanlib {
+        position   : relative;
+        top        : 50%;
+        margin-top : -75px;
+        height     : 150px;
+        width      : 230px;
+      }
+
+      .work_content_detail img.vantalk {
+        position   : relative;
+        top        : 50%;
+        margin-top : -85px;
+        height     : 170px;
+        width      : 230px;
+      }
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 999px) {
+      .work_content_detail img.vanlib {
+        position   : relative;
+        top        : 50%;
+        margin-top : -75px;
+        height     : 150px;
+        width      : 230px;
+      }
+
+      .work_content_detail img.vantalk {
+        position   : relative;
+        top        : 50%;
+        margin-top : -85px;
+        height     : 170px;
+        width      : 230px;
+      }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 699px) {
+      .work_content_detail img.vanlib {
+        position   : relative;
+        top        : 50%;
+        margin-top : -65px;
+        height     : 130px;
+        width      : 190px;
+      }
+
+      .work_content_detail img.vantalk {
+        position   : relative;
+        top        : 50%;
+        margin-top : -75px;
+        height     : 150px;
+        width      : 190px;
+      }
+    }
+
+    @media screen and (min-width: 400px) and (max-width: 599px) {
+      .small-container {
+        display : block;
+      }
+
+      .large-container {
+        display : none;
+      }
+
+      .work_content_detail img.vanlib {
+        position   : relative;
+        top        : 50%;
+        margin-top : -100px;
+        height     : 200px;
+        width      : 300px;
+      }
+
+      .work_content_detail img.namecard {
+        width  : 180px;
+        height : 230px;
+      }
+
+      .work_content_detail img.vantalk {
+        position   : relative;
+        top        : 50%;
+        margin-top : -105px;
+        height     : 210px;
+        width      : 300px;
+      }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 399px) {
+      .small-container {
+        display : block;
+      }
+
+      .large-container {
+        display : none;
+      }
+
+      .work_content_detail img.vanlib {
+        position   : relative;
+        top        : 50%;
+        margin-top : -90px;
+        height     : 180px;
+      }
+
+      .work_content_detail img.namecard {
+        width  : 180px;
+        height : 230px;
+      }
+
+      .work_content_detail img.vantalk {
+        position   : relative;
+        top        : 50%;
+        margin-top : -100px;
+        height     : 200px;
+        width      : 270px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -500,6 +690,9 @@
       <span class="menulogo_pre">PH</span>
       <img src="http://115.29.206.70/assets/resume/cv/images/camera.svg" />
       <span class="menulogo_post">&#8226;</span>
+    </div>
+    <div id="menubtn">
+      <img src="http://115.29.206.70/assets/resume/cv/images/menu.svg" />
     </div>
     <ul id="menulist">
       <li id="profile"><img src="http://115.29.206.70/assets/resume/cv/images/home.svg" />PROFILE</li>
@@ -510,41 +703,41 @@
   </div>
   <div id="main">
     <div id="profile_wrapper">
-      <div id="profile_region" class="body-950">
-        <div class="grid start-01"></div>
-        <div class="grid start-02"></div>
-        <div class="grid start-03"></div>
-        <div class="grid start-04"></div>
-        <div class="grid start-05"></div>
-        <div class="grid start-06"></div>
-        <div class="grid start-07"></div>
-        <div class="grid start-08"></div>
-        <div class="grid start-09"></div>
-        <div class="grid start-10"></div>
-        <div class="grid start-11"></div>
-        <div class="grid start-12"></div>
-        <div class="grid start-13"></div>
-        <div class="grid start-14"></div>
-        <div class="grid start-15"></div>
-        <div class="grid start-16"></div>
-        <div class="grid start-17"></div>
-        <div class="grid start-18"></div>
-        <div class="grid start-19"></div>
-        <div class="grid start-20"></div>
-        <div class="grid start-21"></div>
-        <div class="grid start-22"></div>
-        <div class="grid start-23"></div>
-        <div class="grid start-24"></div>
+      <div id="profile_region" class="body-950 grid-830-body-830 grid-710-body-710 grid-590-body-590 grid-390-body-390 grid-350-body-350">
+        <div class="grid start-01 grid-830-grid grid-830-start-01 grid-710-grid grid-710-start-01 grid-590-grid grid-590-start-01 grid-390-grid grid-390-start-01 grid-350-grid grid-350-start-01"></div>
+        <div class="grid start-02 grid-830-grid grid-830-start-02 grid-710-grid grid-710-start-02 grid-590-grid grid-590-start-02 grid-390-grid grid-390-start-02 grid-350-grid grid-350-start-02"></div>
+        <div class="grid start-03 grid-830-grid grid-830-start-03 grid-710-grid grid-710-start-03 grid-590-grid grid-590-start-03 grid-390-grid grid-390-start-03 grid-350-grid grid-350-start-03"></div>
+        <div class="grid start-04 grid-830-grid grid-830-start-04 grid-710-grid grid-710-start-04 grid-590-grid grid-590-start-04 grid-390-grid grid-390-start-04 grid-350-grid grid-350-start-04"></div>
+        <div class="grid start-05 grid-830-grid grid-830-start-05 grid-710-grid grid-710-start-05 grid-590-grid grid-590-start-05 grid-390-grid grid-390-start-05 grid-350-grid grid-350-start-05"></div>
+        <div class="grid start-06 grid-830-grid grid-830-start-06 grid-710-grid grid-710-start-06 grid-590-grid grid-590-start-06 grid-390-grid grid-390-start-06 grid-350-grid grid-350-start-06"></div>
+        <div class="grid start-07 grid-830-grid grid-830-start-07 grid-710-grid grid-710-start-07 grid-590-grid grid-590-start-07 grid-390-grid grid-390-start-07 grid-350-grid grid-350-start-07"></div>
+        <div class="grid start-08 grid-830-grid grid-830-start-08 grid-710-grid grid-710-start-08 grid-590-grid grid-590-start-08 grid-390-grid grid-390-start-08 grid-350-grid grid-350-start-08"></div>
+        <div class="grid start-09 grid-830-grid grid-830-start-09 grid-710-grid grid-710-start-09 grid-590-grid grid-590-start-09 grid-390-grid grid-390-start-09 grid-350-grid grid-350-start-09"></div>
+        <div class="grid start-10 grid-830-grid grid-830-start-10 grid-710-grid grid-710-start-10 grid-590-grid grid-590-start-10 grid-390-grid grid-390-start-10 grid-350-grid grid-350-start-10"></div>
+        <div class="grid start-11 grid-830-grid grid-830-start-11 grid-710-grid grid-710-start-11 grid-590-grid grid-590-start-11 grid-390-grid grid-390-start-11 grid-350-grid grid-350-start-11"></div>
+        <div class="grid start-12 grid-830-grid grid-830-start-12 grid-710-grid grid-710-start-12 grid-590-grid grid-590-start-12 grid-390-grid grid-390-start-12 grid-350-grid grid-350-start-12"></div>
+        <div class="grid start-13 grid-830-grid grid-830-start-13 grid-710-grid grid-710-start-13 grid-590-grid grid-590-start-13 grid-390-grid grid-390-start-13 grid-350-grid grid-350-start-13"></div>
+        <div class="grid start-14 grid-830-grid grid-830-start-14 grid-710-grid grid-710-start-14 grid-590-grid grid-590-start-14 grid-390-grid grid-390-start-14 grid-350-grid grid-350-start-14"></div>
+        <div class="grid start-15 grid-830-grid grid-830-start-15 grid-710-grid grid-710-start-15 grid-590-grid grid-590-start-15 grid-390-grid grid-390-start-15 grid-350-grid grid-350-start-15"></div>
+        <div class="grid start-16 grid-830-grid grid-830-start-16 grid-710-grid grid-710-start-16 grid-590-grid grid-590-start-16 grid-390-grid grid-390-start-16 grid-350-grid grid-350-start-16"></div>
+        <div class="grid start-17 grid-830-grid grid-830-start-17 grid-710-grid grid-710-start-17 grid-590-grid grid-590-start-17 grid-390-grid grid-390-start-17 grid-350-grid grid-350-start-17"></div>
+        <div class="grid start-18 grid-830-grid grid-830-start-18 grid-710-grid grid-710-start-18 grid-590-grid grid-590-start-18 grid-390-grid grid-390-start-18 grid-350-grid grid-350-start-18"></div>
+        <div class="grid start-19 grid-830-grid grid-830-start-19 grid-710-grid grid-710-start-19 grid-590-grid grid-590-start-19 grid-390-grid grid-390-start-19 grid-350-grid grid-350-start-19"></div>
+        <div class="grid start-20 grid-830-grid grid-830-start-20 grid-710-grid grid-710-start-20 grid-590-grid grid-590-start-20 grid-390-grid grid-390-start-20 grid-350-grid grid-350-start-20"></div>
+        <div class="grid start-21 grid-830-grid grid-830-start-21 grid-710-grid grid-710-start-21 grid-590-grid grid-590-start-21 grid-390-grid grid-390-start-21 grid-350-grid grid-350-start-21"></div>
+        <div class="grid start-22 grid-830-grid grid-830-start-22 grid-710-grid grid-710-start-22 grid-590-grid grid-590-start-22 grid-390-grid grid-390-start-22 grid-350-grid grid-350-start-22"></div>
+        <div class="grid start-23 grid-830-grid grid-830-start-23 grid-710-grid grid-710-start-23 grid-590-grid grid-590-start-23 grid-390-grid grid-390-start-23 grid-350-grid grid-350-start-23"></div>
+        <div class="grid start-24 grid-830-grid grid-830-start-24 grid-710-grid grid-710-start-24 grid-590-grid grid-590-start-24 grid-390-grid grid-390-start-24 grid-350-grid grid-350-start-24"></div>
 
-        <div class="container">
-          <div id="profile_title" class="column-04 start-11">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="profile_title" class="column-04 start-11 grid-830-column-05 grid-830-start-09 grid-710-column-04 grid-710-start-08 grid-590-column-05 grid-590-start-06 grid-390-column-04 grid-390-start-04 grid-350-column-05 grid-350-start-03">
             <span class="profile_title_pre">PH</span>
             <img src="http://115.29.206.70/assets/resume/cv/images/camera.svg" />
             <span class="profile_title_post">&#8226;</span>
           </div>
         </div>
-        <div class="container">
-          <div id="profile_content" class="column-20 start-03">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="profile_content" class="column-20 start-03 grid-830-column-17 grid-830-start-03 grid-710-column-16 grid-710-start-02 grid-590-column-13 grid-590-start-02 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
             <p>Hello, my name is <a href="http://cn.linkedin.com/in/llwanghong" target="_blank">Hong Wang</a>. I am now living in Zhangjiang, Pudong New Dist., Shanghai, China.</p>
             <p>I am now a senior CPU engineer at CPU Group of <a href="http://www.marvell.com/" target="_blank">Marvell Technology Group Ltd</a>, and focusing on High Performance Mobile Processor Design and Verification work.</p>
           </div>
@@ -554,34 +747,34 @@
       <div id="profile_share"></div>
     </div>
     <div id="resume_wrapper">
-      <div id="resume_region" class="body-950">
-        <div class="grid start-01"></div>
-        <div class="grid start-02"></div>
-        <div class="grid start-03"></div>
-        <div class="grid start-04"></div>
-        <div class="grid start-05"></div>
-        <div class="grid start-06"></div>
-        <div class="grid start-07"></div>
-        <div class="grid start-08"></div>
-        <div class="grid start-09"></div>
-        <div class="grid start-10"></div>
-        <div class="grid start-11"></div>
-        <div class="grid start-12"></div>
-        <div class="grid start-13"></div>
-        <div class="grid start-14"></div>
-        <div class="grid start-15"></div>
-        <div class="grid start-16"></div>
-        <div class="grid start-17"></div>
-        <div class="grid start-18"></div>
-        <div class="grid start-19"></div>
-        <div class="grid start-20"></div>
-        <div class="grid start-21"></div>
-        <div class="grid start-22"></div>
-        <div class="grid start-23"></div>
-        <div class="grid start-24"></div>
+      <div id="resume_region" class="body-950 grid-830-body-830 grid-710-body-710 grid-590-body-590 grid-390-body-390 grid-350-body-350">
+        <div class="grid start-01 grid-830-grid grid-830-start-01 grid-710-grid grid-710-start-01 grid-590-grid grid-590-start-01 grid-390-grid grid-390-start-01 grid-350-grid grid-350-start-01"></div>
+        <div class="grid start-02 grid-830-grid grid-830-start-02 grid-710-grid grid-710-start-02 grid-590-grid grid-590-start-02 grid-390-grid grid-390-start-02 grid-350-grid grid-350-start-02"></div>
+        <div class="grid start-03 grid-830-grid grid-830-start-03 grid-710-grid grid-710-start-03 grid-590-grid grid-590-start-03 grid-390-grid grid-390-start-03 grid-350-grid grid-350-start-03"></div>
+        <div class="grid start-04 grid-830-grid grid-830-start-04 grid-710-grid grid-710-start-04 grid-590-grid grid-590-start-04 grid-390-grid grid-390-start-04 grid-350-grid grid-350-start-04"></div>
+        <div class="grid start-05 grid-830-grid grid-830-start-05 grid-710-grid grid-710-start-05 grid-590-grid grid-590-start-05 grid-390-grid grid-390-start-05 grid-350-grid grid-350-start-05"></div>
+        <div class="grid start-06 grid-830-grid grid-830-start-06 grid-710-grid grid-710-start-06 grid-590-grid grid-590-start-06 grid-390-grid grid-390-start-06 grid-350-grid grid-350-start-06"></div>
+        <div class="grid start-07 grid-830-grid grid-830-start-07 grid-710-grid grid-710-start-07 grid-590-grid grid-590-start-07 grid-390-grid grid-390-start-07 grid-350-grid grid-350-start-07"></div>
+        <div class="grid start-08 grid-830-grid grid-830-start-08 grid-710-grid grid-710-start-08 grid-590-grid grid-590-start-08 grid-390-grid grid-390-start-08 grid-350-grid grid-350-start-08"></div>
+        <div class="grid start-09 grid-830-grid grid-830-start-09 grid-710-grid grid-710-start-09 grid-590-grid grid-590-start-09 grid-390-grid grid-390-start-09 grid-350-grid grid-350-start-09"></div>
+        <div class="grid start-10 grid-830-grid grid-830-start-10 grid-710-grid grid-710-start-10 grid-590-grid grid-590-start-10 grid-390-grid grid-390-start-10 grid-350-grid grid-350-start-10"></div>
+        <div class="grid start-11 grid-830-grid grid-830-start-11 grid-710-grid grid-710-start-11 grid-590-grid grid-590-start-11 grid-390-grid grid-390-start-11 grid-350-grid grid-350-start-11"></div>
+        <div class="grid start-12 grid-830-grid grid-830-start-12 grid-710-grid grid-710-start-12 grid-590-grid grid-590-start-12 grid-390-grid grid-390-start-12 grid-350-grid grid-350-start-12"></div>
+        <div class="grid start-13 grid-830-grid grid-830-start-13 grid-710-grid grid-710-start-13 grid-590-grid grid-590-start-13 grid-390-grid grid-390-start-13 grid-350-grid grid-350-start-13"></div>
+        <div class="grid start-14 grid-830-grid grid-830-start-14 grid-710-grid grid-710-start-14 grid-590-grid grid-590-start-14 grid-390-grid grid-390-start-14 grid-350-grid grid-350-start-14"></div>
+        <div class="grid start-15 grid-830-grid grid-830-start-15 grid-710-grid grid-710-start-15 grid-590-grid grid-590-start-15 grid-390-grid grid-390-start-15 grid-350-grid grid-350-start-15"></div>
+        <div class="grid start-16 grid-830-grid grid-830-start-16 grid-710-grid grid-710-start-16 grid-590-grid grid-590-start-16 grid-390-grid grid-390-start-16 grid-350-grid grid-350-start-16"></div>
+        <div class="grid start-17 grid-830-grid grid-830-start-17 grid-710-grid grid-710-start-17 grid-590-grid grid-590-start-17 grid-390-grid grid-390-start-17 grid-350-grid grid-350-start-17"></div>
+        <div class="grid start-18 grid-830-grid grid-830-start-18 grid-710-grid grid-710-start-18 grid-590-grid grid-590-start-18 grid-390-grid grid-390-start-18 grid-350-grid grid-350-start-18"></div>
+        <div class="grid start-19 grid-830-grid grid-830-start-19 grid-710-grid grid-710-start-19 grid-590-grid grid-590-start-19 grid-390-grid grid-390-start-19 grid-350-grid grid-350-start-19"></div>
+        <div class="grid start-20 grid-830-grid grid-830-start-20 grid-710-grid grid-710-start-20 grid-590-grid grid-590-start-20 grid-390-grid grid-390-start-20 grid-350-grid grid-350-start-20"></div>
+        <div class="grid start-21 grid-830-grid grid-830-start-21 grid-710-grid grid-710-start-21 grid-590-grid grid-590-start-21 grid-390-grid grid-390-start-21 grid-350-grid grid-350-start-21"></div>
+        <div class="grid start-22 grid-830-grid grid-830-start-22 grid-710-grid grid-710-start-22 grid-590-grid grid-590-start-22 grid-390-grid grid-390-start-22 grid-350-grid grid-350-start-22"></div>
+        <div class="grid start-23 grid-830-grid grid-830-start-23 grid-710-grid grid-710-start-23 grid-590-grid grid-590-start-23 grid-390-grid grid-390-start-23 grid-350-grid grid-350-start-23"></div>
+        <div class="grid start-24 grid-830-grid grid-830-start-24 grid-710-grid grid-710-start-24 grid-590-grid grid-590-start-24 grid-390-grid grid-390-start-24 grid-350-grid grid-350-start-24"></div>
 
-        <div class="container">
-          <div id="resume_title" class="column-04 start-11">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="resume_title" class="column-04 start-11 grid-830-column-05 grid-830-start-09 grid-710-column-04 grid-710-start-08 grid-590-column-05 grid-590-start-06 grid-390-column-04 grid-390-start-04 grid-350-column-05 grid-350-start-03">
             RESUME
             <div class="ul"></div>
             <div class="um"></div>
@@ -589,8 +782,8 @@
           </div>
         </div>
 
-        <div class="container">
-          <div id="resume_content" class="column-20 start-03">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="resume_content" class="column-20 start-03 grid-830-column-17 grid-830-start-03 grid-710-column-16 grid-710-start-02 grid-590-column-13 grid-590-start-02 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
             <p>My current working area is CPU design and verification, and I once involved in physical back-end design (RTL synthesis, formal equivalence check, static timing analysis, physical implementation etc), low power design and verification, FPGA prototpying and validation work for our last projects. I am currently working on verification work of one new ARM v8 processor project.</p>
             <p>I am also interesting in Web Design, and spend a lot of my spare time in this area. The elements in the area are so attractive, the dynamic nature of JavaScript, the beautiful CSS layout, the amazing power of Node.js ...</p>
           </div>
@@ -606,8 +799,8 @@
               </div>
               <div class="position">CPU Senior Engineer</div>
               <div class="company">Marvell Semiconductor</div>
-              <div class="container">
-                <div class="description start-04 column-18">
+              <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+                <div class="description column-18 start-04 grid-830-column-17 grid-830-start-03 grid-710-column-16 grid-710-start-02 grid-590-column-13 grid-590-start-02 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
                   <ul>
                     <li>Low power design and verification work for one ARM v7 processor project.</li>
                     <li>Module-level verification work for one ARM v8 processor project.</li>
@@ -622,8 +815,8 @@
               </div>
               <div class="position">CPU Back-End Engineer</div>
               <div class="company">Marvell Semiconductor</div>
-              <div class="container">
-                <div class="description start-04 column-18">
+              <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+                <div class="description column-18 start-04 grid-830-column-17 grid-830-start-03 grid-710-column-16 grid-710-start-02 grid-590-column-13 grid-590-start-02 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
                   <ul>
                     <li>RTL synthesis, placement, formal equivalence check and signoff timing check for several ARM processor projects.</li>
                     <li>Low power verification environment setup, low power design and verification work for one ARM v7 processor.</li>
@@ -639,8 +832,8 @@
               </div>
               <div class="position">Physical Back-End Engineer</div>
               <div class="company">Institute of Computing Technology</div>
-              <div class="container">
-                <div class="description start-04 column-18">
+              <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+                <div class="description column-18 start-04 grid-830-column-17 grid-830-start-03 grid-710-column-16 grid-710-start-02 grid-590-column-13 grid-590-start-02 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
                   <ul>
                     <li>Preliminary research work for Godson 3C (16 cores, TSMC 28nm), 2H (single core, ST 65nm) CPU, including semi-custom design of floating-point unit, design methodologies of mainstream CPUs (IBM POWER processors).</li>
                     <li>Participated in the Chip-Level physical implementation of Godson 1F South Bridge chip (SMIC .13um, 1.6M Instances, Signoff timing is 350MHz).</li>
@@ -659,8 +852,10 @@
               </div>
               <div class="degree">Master of Engineering (M.Eng.), Computer System and Architecture</div>
               <div class="school"><img class="gucas" src="http://115.29.206.70/assets/resume/cv/images/gucas.jpg" />University of Chinese Academy of Sciences</div>
-              <div class="container">
-                <div class="description education start-04 column-18"><strong>Main Courses: </strong>High-Performance Computer System, Computability and Complexity of Computing, ASIC Design, VLSI Testing and Design for Testability, Verification of IC Design.</div>
+              <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+                <div class="description education column-18 start-04 grid-830-column-15 grid-830-start-04 grid-710-column-14 grid-710-start-03 grid-590-column-11 grid-590-start-03 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
+                  <strong>Main Courses: </strong>High-Performance Computer System, Computability and Complexity of Computing, ASIC Design, VLSI Testing and Design for Testability, Verification of IC Design.
+                </div>
               </div>
             </div>
             <div class="experience">
@@ -670,8 +865,10 @@
               </div>
               <div class="degree">Bachelor of Science (B.Sc.), Applied Physics</div>
               <div class="school"><img class="njupt" src="http://115.29.206.70/assets/resume/cv/images/njupt.jpg" />Nanjing University of Posts and Telecommunications</div>
-              <div class="container">
-                <div class="description education start-04 column-18"><strong>Main Courses: </strong>Mathematical Methods of Physics, Quantum Mechanics, Signals and Systems, Communication Theory, Principles of Computer Organization, Digital/Analog Circuits, RF Circuits, Electrodynamics.</div>
+              <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+                <div class="description education column-18 start-04 grid-830-column-15 grid-830-start-04 grid-710-column-14 grid-710-start-03 grid-590-column-11 grid-590-start-03 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
+                  <strong>Main Courses: </strong>Mathematical Methods of Physics, Quantum Mechanics, Signals and Systems, Communication Theory, Principles of Computer Organization, Digital/Analog Circuits, RF Circuits, Electrodynamics.
+                </div>
               </div>
             </div>
           </div>
@@ -680,34 +877,34 @@
     </div>
 
     <div id="work_wrapper">
-      <div id="work_region" class="body-950">
-        <div class="grid start-01"></div>
-        <div class="grid start-02"></div>
-        <div class="grid start-03"></div>
-        <div class="grid start-04"></div>
-        <div class="grid start-05"></div>
-        <div class="grid start-06"></div>
-        <div class="grid start-07"></div>
-        <div class="grid start-08"></div>
-        <div class="grid start-09"></div>
-        <div class="grid start-10"></div>
-        <div class="grid start-11"></div>
-        <div class="grid start-12"></div>
-        <div class="grid start-13"></div>
-        <div class="grid start-14"></div>
-        <div class="grid start-15"></div>
-        <div class="grid start-16"></div>
-        <div class="grid start-17"></div>
-        <div class="grid start-18"></div>
-        <div class="grid start-19"></div>
-        <div class="grid start-20"></div>
-        <div class="grid start-21"></div>
-        <div class="grid start-22"></div>
-        <div class="grid start-23"></div>
-        <div class="grid start-24"></div>
+      <div id="work_region" class="body-950 grid-830-body-830 grid-710-body-710 grid-590-body-590 grid-390-body-390 grid-350-body-350">
+        <div class="grid start-01 grid-830-grid grid-830-start-01 grid-710-grid grid-710-start-01 grid-590-grid grid-590-start-01 grid-390-grid grid-390-start-01 grid-350-grid grid-350-start-01"></div>
+        <div class="grid start-02 grid-830-grid grid-830-start-02 grid-710-grid grid-710-start-02 grid-590-grid grid-590-start-02 grid-390-grid grid-390-start-02 grid-350-grid grid-350-start-02"></div>
+        <div class="grid start-03 grid-830-grid grid-830-start-03 grid-710-grid grid-710-start-03 grid-590-grid grid-590-start-03 grid-390-grid grid-390-start-03 grid-350-grid grid-350-start-03"></div>
+        <div class="grid start-04 grid-830-grid grid-830-start-04 grid-710-grid grid-710-start-04 grid-590-grid grid-590-start-04 grid-390-grid grid-390-start-04 grid-350-grid grid-350-start-04"></div>
+        <div class="grid start-05 grid-830-grid grid-830-start-05 grid-710-grid grid-710-start-05 grid-590-grid grid-590-start-05 grid-390-grid grid-390-start-05 grid-350-grid grid-350-start-05"></div>
+        <div class="grid start-06 grid-830-grid grid-830-start-06 grid-710-grid grid-710-start-06 grid-590-grid grid-590-start-06 grid-390-grid grid-390-start-06 grid-350-grid grid-350-start-06"></div>
+        <div class="grid start-07 grid-830-grid grid-830-start-07 grid-710-grid grid-710-start-07 grid-590-grid grid-590-start-07 grid-390-grid grid-390-start-07 grid-350-grid grid-350-start-07"></div>
+        <div class="grid start-08 grid-830-grid grid-830-start-08 grid-710-grid grid-710-start-08 grid-590-grid grid-590-start-08 grid-390-grid grid-390-start-08 grid-350-grid grid-350-start-08"></div>
+        <div class="grid start-09 grid-830-grid grid-830-start-09 grid-710-grid grid-710-start-09 grid-590-grid grid-590-start-09 grid-390-grid grid-390-start-09 grid-350-grid grid-350-start-09"></div>
+        <div class="grid start-10 grid-830-grid grid-830-start-10 grid-710-grid grid-710-start-10 grid-590-grid grid-590-start-10 grid-390-grid grid-390-start-10 grid-350-grid grid-350-start-10"></div>
+        <div class="grid start-11 grid-830-grid grid-830-start-11 grid-710-grid grid-710-start-11 grid-590-grid grid-590-start-11 grid-390-grid grid-390-start-11 grid-350-grid grid-350-start-11"></div>
+        <div class="grid start-12 grid-830-grid grid-830-start-12 grid-710-grid grid-710-start-12 grid-590-grid grid-590-start-12 grid-390-grid grid-390-start-12 grid-350-grid grid-350-start-12"></div>
+        <div class="grid start-13 grid-830-grid grid-830-start-13 grid-710-grid grid-710-start-13 grid-590-grid grid-590-start-13 grid-390-grid grid-390-start-13 grid-350-grid grid-350-start-13"></div>
+        <div class="grid start-14 grid-830-grid grid-830-start-14 grid-710-grid grid-710-start-14 grid-590-grid grid-590-start-14 grid-390-grid grid-390-start-14 grid-350-grid grid-350-start-14"></div>
+        <div class="grid start-15 grid-830-grid grid-830-start-15 grid-710-grid grid-710-start-15 grid-590-grid grid-590-start-15 grid-390-grid grid-390-start-15 grid-350-grid grid-350-start-15"></div>
+        <div class="grid start-16 grid-830-grid grid-830-start-16 grid-710-grid grid-710-start-16 grid-590-grid grid-590-start-16 grid-390-grid grid-390-start-16 grid-350-grid grid-350-start-16"></div>
+        <div class="grid start-17 grid-830-grid grid-830-start-17 grid-710-grid grid-710-start-17 grid-590-grid grid-590-start-17 grid-390-grid grid-390-start-17 grid-350-grid grid-350-start-17"></div>
+        <div class="grid start-18 grid-830-grid grid-830-start-18 grid-710-grid grid-710-start-18 grid-590-grid grid-590-start-18 grid-390-grid grid-390-start-18 grid-350-grid grid-350-start-18"></div>
+        <div class="grid start-19 grid-830-grid grid-830-start-19 grid-710-grid grid-710-start-19 grid-590-grid grid-590-start-19 grid-390-grid grid-390-start-19 grid-350-grid grid-350-start-19"></div>
+        <div class="grid start-20 grid-830-grid grid-830-start-20 grid-710-grid grid-710-start-20 grid-590-grid grid-590-start-20 grid-390-grid grid-390-start-20 grid-350-grid grid-350-start-20"></div>
+        <div class="grid start-21 grid-830-grid grid-830-start-21 grid-710-grid grid-710-start-21 grid-590-grid grid-590-start-21 grid-390-grid grid-390-start-21 grid-350-grid grid-350-start-21"></div>
+        <div class="grid start-22 grid-830-grid grid-830-start-22 grid-710-grid grid-710-start-22 grid-590-grid grid-590-start-22 grid-390-grid grid-390-start-22 grid-350-grid grid-350-start-22"></div>
+        <div class="grid start-23 grid-830-grid grid-830-start-23 grid-710-grid grid-710-start-23 grid-590-grid grid-590-start-23 grid-390-grid grid-390-start-23 grid-350-grid grid-350-start-23"></div>
+        <div class="grid start-24 grid-830-grid grid-830-start-24 grid-710-grid grid-710-start-24 grid-590-grid grid-590-start-24 grid-390-grid grid-390-start-24 grid-350-grid grid-350-start-24"></div>
 
-        <div class="container">
-          <div id="work_title" class="column-04 start-11">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="work_title" class="column-04 start-11 grid-830-column-05 grid-830-start-09 grid-710-column-04 grid-710-start-08 grid-590-column-05 grid-590-start-06 grid-390-column-04 grid-390-start-04 grid-350-column-05 grid-350-start-03">
             WORK
             <div class="ul"></div>
             <div class="um"></div>
@@ -715,8 +912,8 @@
           </div>
         </div>
 
-        <div class="container">
-          <div id="work_content" class="column-20 start-03">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="work_content" class="column-20 start-03 grid-830-column-17 grid-830-start-03 grid-710-column-16 grid-710-start-02 grid-590-column-13 grid-590-start-02 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
             <p>In my spare time, I spend a lot effort on Web Design area. After reading series of classical books and materials, I am now proficient with JavaScript, CSS etc.</p>
             <p>I once try to write one own JavaScript library vAN, which can finish common frontend works, such as DOM/CSS operations, frequently used Events operations and Animation operations. This Resume page and following <a href="http://115.29.206.70/assets/resume/slider.html" target="_blank">Slider</a> are both using this library.</p>
             <p>In addition, I once finished one single web page of my company <a href="http://115.29.206.70/assets/resume/card.html" target="_blank">Name Card</a>.</p>
@@ -724,49 +921,64 @@
           </div>
         </div>
 
-        <div class="container">
-          <div class="work_content_detail column-07 start-03">
+        <div class="large-container container grid-830-container grid-710-container grid-590-container">
+          <div class="work_content_detail column-07 start-03 grid-830-column-06 grid-830-start-02 grid-710-column-06 grid-710-start-01 grid-590-column-05 grid-590-start-01">
             <a href="http://115.29.206.70/assets/resume/slider.html" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/vanlib.png" class="vanlib" alt="Slider based on vAN library"/></a>
           </div>
-          <div class="work_content_detail column-06 start-10">
+          <div class="work_content_detail column-06 start-10 grid-830-column-07 grid-830-start-08 grid-710-column-06 grid-710-start-07 grid-590-column-05 grid-590-start-06">
             <a href="http://115.29.206.70/assets/resume/card.html" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/namecard.png" class="namecard" alt="Name Card"/></a>
           </div>
-          <div class="work_content_detail vantalk column-07 start-16">
-            <a href="https://github.com/llwanghong/vanTalk" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/vantalk.png" alt="Realtime Chatting WebAPP - vanTalk"/></a>
+          <div class="work_content_detail column-07 start-16 grid-830-column-06 grid-830-start-15 grid-710-column-06 grid-710-start-13 grid-590-column-05 grid-590-start-11">
+            <a href="https://github.com/llwanghong/vanTalk" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/vantalk.png" class="vantalk" alt="Realtime Chatting WebAPP - vanTalk"/></a>
+          </div> 
+        </div>  
+        <div class="small-container grid-390-container grid-350-container">
+          <div class="work_content_detail grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
+            <a href="http://115.29.206.70/assets/resume/slider.html" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/vanlib.png" class="vanlib" alt="Slider based on vAN library"/></a>
+          </div>
+        </div>  
+        <div class="small-container grid-390-container grid-350-container">
+          <div class="work_content_detail grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
+            <a href="http://115.29.206.70/assets/resume/card.html" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/namecard.png" class="namecard" alt="Name Card"/></a>
+          </div>
+        </div>  
+        <div class="small-container grid-390-container grid-350-container">
+          <div class="work_content_detail grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
+            <a href="https://github.com/llwanghong/vanTalk" target="_blank"><img src="http://115.29.206.70/assets/resume/cv/images/vantalk.png" class="vantalk" alt="Realtime Chatting WebAPP - vanTalk"/></a>
           </div> 
         </div>  
       </div>
     </div>
 
     <div id="contact_wrapper">
-      <div id="contact_region" class="body-950">
-        <div class="grid start-01"></div>
-        <div class="grid start-02"></div>
-        <div class="grid start-03"></div>
-        <div class="grid start-04"></div>
-        <div class="grid start-05"></div>
-        <div class="grid start-06"></div>
-        <div class="grid start-07"></div>
-        <div class="grid start-08"></div>
-        <div class="grid start-09"></div>
-        <div class="grid start-10"></div>
-        <div class="grid start-11"></div>
-        <div class="grid start-12"></div>
-        <div class="grid start-13"></div>
-        <div class="grid start-14"></div>
-        <div class="grid start-15"></div>
-        <div class="grid start-16"></div>
-        <div class="grid start-17"></div>
-        <div class="grid start-18"></div>
-        <div class="grid start-19"></div>
-        <div class="grid start-20"></div>
-        <div class="grid start-21"></div>
-        <div class="grid start-22"></div>
-        <div class="grid start-23"></div>
-        <div class="grid start-24"></div>
+      <div id="contact_region" class="body-950 grid-830-body-830 grid-710-body-710 grid-590-body-590 grid-390-body-390 grid-350-body-350">
+        <div class="grid start-01 grid-830-grid grid-830-start-01 grid-710-grid grid-710-start-01 grid-590-grid grid-590-start-01 grid-390-grid grid-390-start-01 grid-350-grid grid-350-start-01"></div>
+        <div class="grid start-02 grid-830-grid grid-830-start-02 grid-710-grid grid-710-start-02 grid-590-grid grid-590-start-02 grid-390-grid grid-390-start-02 grid-350-grid grid-350-start-02"></div>
+        <div class="grid start-03 grid-830-grid grid-830-start-03 grid-710-grid grid-710-start-03 grid-590-grid grid-590-start-03 grid-390-grid grid-390-start-03 grid-350-grid grid-350-start-03"></div>
+        <div class="grid start-04 grid-830-grid grid-830-start-04 grid-710-grid grid-710-start-04 grid-590-grid grid-590-start-04 grid-390-grid grid-390-start-04 grid-350-grid grid-350-start-04"></div>
+        <div class="grid start-05 grid-830-grid grid-830-start-05 grid-710-grid grid-710-start-05 grid-590-grid grid-590-start-05 grid-390-grid grid-390-start-05 grid-350-grid grid-350-start-05"></div>
+        <div class="grid start-06 grid-830-grid grid-830-start-06 grid-710-grid grid-710-start-06 grid-590-grid grid-590-start-06 grid-390-grid grid-390-start-06 grid-350-grid grid-350-start-06"></div>
+        <div class="grid start-07 grid-830-grid grid-830-start-07 grid-710-grid grid-710-start-07 grid-590-grid grid-590-start-07 grid-390-grid grid-390-start-07 grid-350-grid grid-350-start-07"></div>
+        <div class="grid start-08 grid-830-grid grid-830-start-08 grid-710-grid grid-710-start-08 grid-590-grid grid-590-start-08 grid-390-grid grid-390-start-08 grid-350-grid grid-350-start-08"></div>
+        <div class="grid start-09 grid-830-grid grid-830-start-09 grid-710-grid grid-710-start-09 grid-590-grid grid-590-start-09 grid-390-grid grid-390-start-09 grid-350-grid grid-350-start-09"></div>
+        <div class="grid start-10 grid-830-grid grid-830-start-10 grid-710-grid grid-710-start-10 grid-590-grid grid-590-start-10 grid-390-grid grid-390-start-10 grid-350-grid grid-350-start-10"></div>
+        <div class="grid start-11 grid-830-grid grid-830-start-11 grid-710-grid grid-710-start-11 grid-590-grid grid-590-start-11 grid-390-grid grid-390-start-11 grid-350-grid grid-350-start-11"></div>
+        <div class="grid start-12 grid-830-grid grid-830-start-12 grid-710-grid grid-710-start-12 grid-590-grid grid-590-start-12 grid-390-grid grid-390-start-12 grid-350-grid grid-350-start-12"></div>
+        <div class="grid start-13 grid-830-grid grid-830-start-13 grid-710-grid grid-710-start-13 grid-590-grid grid-590-start-13 grid-390-grid grid-390-start-13 grid-350-grid grid-350-start-13"></div>
+        <div class="grid start-14 grid-830-grid grid-830-start-14 grid-710-grid grid-710-start-14 grid-590-grid grid-590-start-14 grid-390-grid grid-390-start-14 grid-350-grid grid-350-start-14"></div>
+        <div class="grid start-15 grid-830-grid grid-830-start-15 grid-710-grid grid-710-start-15 grid-590-grid grid-590-start-15 grid-390-grid grid-390-start-15 grid-350-grid grid-350-start-15"></div>
+        <div class="grid start-16 grid-830-grid grid-830-start-16 grid-710-grid grid-710-start-16 grid-590-grid grid-590-start-16 grid-390-grid grid-390-start-16 grid-350-grid grid-350-start-16"></div>
+        <div class="grid start-17 grid-830-grid grid-830-start-17 grid-710-grid grid-710-start-17 grid-590-grid grid-590-start-17 grid-390-grid grid-390-start-17 grid-350-grid grid-350-start-17"></div>
+        <div class="grid start-18 grid-830-grid grid-830-start-18 grid-710-grid grid-710-start-18 grid-590-grid grid-590-start-18 grid-390-grid grid-390-start-18 grid-350-grid grid-350-start-18"></div>
+        <div class="grid start-19 grid-830-grid grid-830-start-19 grid-710-grid grid-710-start-19 grid-590-grid grid-590-start-19 grid-390-grid grid-390-start-19 grid-350-grid grid-350-start-19"></div>
+        <div class="grid start-20 grid-830-grid grid-830-start-20 grid-710-grid grid-710-start-20 grid-590-grid grid-590-start-20 grid-390-grid grid-390-start-20 grid-350-grid grid-350-start-20"></div>
+        <div class="grid start-21 grid-830-grid grid-830-start-21 grid-710-grid grid-710-start-21 grid-590-grid grid-590-start-21 grid-390-grid grid-390-start-21 grid-350-grid grid-350-start-21"></div>
+        <div class="grid start-22 grid-830-grid grid-830-start-22 grid-710-grid grid-710-start-22 grid-590-grid grid-590-start-22 grid-390-grid grid-390-start-22 grid-350-grid grid-350-start-22"></div>
+        <div class="grid start-23 grid-830-grid grid-830-start-23 grid-710-grid grid-710-start-23 grid-590-grid grid-590-start-23 grid-390-grid grid-390-start-23 grid-350-grid grid-350-start-23"></div>
+        <div class="grid start-24 grid-830-grid grid-830-start-24 grid-710-grid grid-710-start-24 grid-590-grid grid-590-start-24 grid-390-grid grid-390-start-24 grid-350-grid grid-350-start-24"></div>
 
-        <div class="container">  
-          <div id="contact_title" class="column-04 start-11">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="contact_title" class="column-04 start-11 grid-830-column-05 grid-830-start-09 grid-710-column-04 grid-710-start-08 grid-590-column-05 grid-590-start-06 grid-390-column-04 grid-390-start-04 grid-350-column-05 grid-350-start-03">
             CONTACT
             <div class="ul"></div>
             <div class="um"></div>
@@ -774,8 +986,8 @@
           </div>
         </div>
 
-        <div class="container">
-          <div id="contact_content" class="column-20 start-03">
+        <div class="container grid-830-container grid-710-container grid-590-container grid-390-container grid-350-container">
+          <div id="contact_content" class="column-20 start-03 grid-830-column-17 grid-830-start-03 grid-710-column-16 grid-710-start-02 grid-590-column-13 grid-590-start-02 grid-390-column-08 grid-390-start-02 grid-350-column-07 grid-350-start-02">
             <p>I am now seeking one Web Frontend Design position and really hope one great Web team can give me an opportunity and accept me, accept one young guy with great enthusiasm in Web Design area, I want to grow faster with all team memebers together. I won't let you down. Waiting for your message.</p>
             <p>Email: llwanghong@gmail.com</p>
             <p>Wechat: llwanghong</p>
@@ -788,10 +1000,12 @@
   </div>
   <script type="text/javascript" src="http://115.29.206.70/assets/resume/cv/scripts/van.js"></script>
   <script type="text/javascript">
-    var profile_wrapper_top, resume_wrapper_top, work_wrapper_top, contact_wrapper_top,
-      scrollHandle = null,
+    var profile_wrapper_top, old_profile_wrapper_top, resume_wrapper_top, work_wrapper_top, contact_wrapper_top,
+      menu, main,
+      menu_active   = false,
+      scrollHandle  = null,
       animateHandle = null,
-      scrollElem = null;
+      scrollElem    = null;
 
     // handler for mouse scroll event
     scrollHandle = function () {
@@ -844,14 +1058,51 @@
     document.body.scrollTop = 1;
     if (document.body.scrollTop === 1) {
       scrollElem = document.body;
+      document.body.scrollTop = 0;
     } else {
       scrollElem = document.documentElement;
     }
+
+    // menubtn for small devices (size < 1000px)
+    menu = $('img', $('#menubtn'))[0];
+    // main region for all wrappers
+    main = $('#main')[0];
 
     profile_wrapper_top = $('#profile_wrapper').offset().top;
     resume_wrapper_top  = $('#resume_wrapper' ).offset().top;
     work_wrapper_top    = $('#work_wrapper'   ).offset().top;
     contact_wrapper_top = $('#contact_wrapper').offset().top;
+    old_profile_wrapper_top = profile_wrapper_top;
+
+    if ($.curCSS(menu, 'display') === 'block') {
+      profile_wrapper_top -= 35;
+      resume_wrapper_top  -= 35;
+      work_wrapper_top    -= 35;
+      contact_wrapper_top -= 35;
+    }
+
+    // bind orientation change and update top value for each menulist
+    $.addEvent(window, 'orientationchange', function () {
+      setTimeout(function () {
+        var delta;
+        profile_wrapper_top = $('#profile_wrapper').offset().top;
+        resume_wrapper_top  = $('#resume_wrapper' ).offset().top;
+        work_wrapper_top    = $('#work_wrapper'   ).offset().top;
+        contact_wrapper_top = $('#contact_wrapper').offset().top;
+
+        if ($.curCSS(menu, 'display') === 'block') {
+          delta = old_profile_wrapper_top - profile_wrapper_top - 35;
+        } else {
+          delta = old_profile_wrapper_top - profile_wrapper_top;
+        }
+        if (delta > 0) {
+          profile_wrapper_top += delta;
+          resume_wrapper_top  += delta;
+          work_wrapper_top    += delta;
+          contact_wrapper_top += delta;
+        }
+      }, 1000);
+    });
 
     // bind click event for each list in the side menu
     $.addEvent($("#profile")[0], 'click', function () {
@@ -859,6 +1110,12 @@
         top   = $(window).scrollTop(),
         delta = profile_wrapper_top-top,
         steps = Math.abs(Math.ceil(delta/60));
+
+      if (menu_active) {
+        $('#menulist')[0].style.display = '';
+        menu_active = false;
+      }
+
       animateHandle('#profile', delta, steps);
     });
 
@@ -867,6 +1124,12 @@
        top   = $(window).scrollTop(),
        delta = resume_wrapper_top-top,
        steps = Math.abs(Math.ceil(delta/60));
+
+      if (menu_active) {
+        $('#menulist')[0].style.display = '';
+        menu_active = false;
+      }
+
       animateHandle('#resume', delta, steps);
     });
 
@@ -875,6 +1138,12 @@
        top   = $(window).scrollTop(),
        delta = work_wrapper_top-top,
        steps = Math.abs(Math.ceil(delta/60));
+
+      if (menu_active) {
+        $('#menulist')[0].style.display = '';
+        menu_active = false;
+      }
+
       animateHandle('#work', delta, steps);
     });
 
@@ -883,11 +1152,30 @@
        top   = $(window).scrollTop(),
        delta = contact_wrapper_top-top,
        steps = Math.abs(Math.ceil(delta/60));
+
+      if (menu_active) {
+        $('#menulist')[0].style.display = '';
+        menu_active = false;
+      }
+
       animateHandle('#contact', delta, steps);
     });
 
     // bind the window scroll event at the begining 
     $.addEvent(window, 'scroll', scrollHandle);
+
+    // bind menu for small devices (size < 1000px)
+    $.addEvent(menu, 'click', function () {
+      menu_active = true;
+      $('#menulist')[0].style.display = 'block';
+    });
+
+    $.addEvent(main, 'click', function () {
+      if (menu_active) {
+        $('#menulist')[0].style.display = '';
+        menu_active = false;
+      }
+    });
   </script>
 </body>
 <html>
